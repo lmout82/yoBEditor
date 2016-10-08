@@ -1,0 +1,274 @@
+/**********************************************************************************************
+//                                        block-editor.css
+//
+// Author(s): lmout82
+// BEDITOR version 1.0 beta
+// Licence:  MIT License
+// Link: https://github.com/lmout82/yoBEditor.git
+// Creation date: August 2016
+// Last modification date: October 2016
+//**********************************************************************************************/
+
+
+#beditor-wrapper {
+	max-width: 1000px;
+}
+
+
+#beditor-buttons-wrapper {
+	float: left;
+	width: 100%;
+}
+
+
+.beditor-button {
+	float: left;
+	width: 100px;
+	background: #f5f5f5;
+	padding:6px 0 6px 0;
+	margin-right: 2px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	font: bold 13px Arial;
+	color: #555;
+}
+
+.beditor-button:hover {
+	 background-color: white;
+}
+
+
+.beditor-button-right {
+	float: right;
+	width: 100px;
+	background: #f5f5f5;
+	padding:6px 0 6px 0;
+	margin-right: 2px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	font: bold 13px Arial;
+	color: #555;
+}
+	    
+.beditor-button-right:hover {
+	 background-color: white;
+}	
+	 
+
+#beditor-input {
+	min-height: 500px;
+	overflow:hidden;	
+	background-color: #FCFCFC; 
+	margin-top: 5px; 
+	border: 1px solid black;
+}
+	
+	
+.beditor-spacer {clear: both;}
+
+
+.beditor-block-wrapper {
+	display: table;
+	width: 99%;
+	margin: auto;
+	margin-top: 5px;
+	background-color: white;	
+}
+
+.beditor-block-wrapper:hover {
+	background-color: #F8FBFC;
+}
+
+
+.beditor-cell-content {
+	width: 100%;
+	min-height: 100px; 
+}
+
+.beditor-cell-menu-bar {
+	width: 100%;
+	background: #f5f5f5;
+	opacity: 0.5;
+}
+
+.beditor-cell-menu-bar:hover {
+	opacity: 1;
+}
+
+
+.beditor-cell-11 {
+	display: table-cell;
+	width: 100%;
+	vertical-align: top;
+	margin-left: 1px;
+	border-bottom: 1px solid #E6E6E6; 
+}
+
+.beditor-cell-11:hover {
+	background-image: url(edit.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-bottom: 1px solid red;
+}
+
+.beditor-cell-12 {
+	display: table-cell;
+	width: 50%;
+	vertical-align: top;
+	border-bottom: 1px solid #E6E6E6; 
+}
+
+.beditor-cell-12:hover {
+	background-image: url(edit.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-bottom: 1px solid red;
+}
+
+
+.beditor-cell-13 {
+	display: table-cell;
+	width: 33.33%;
+	vertical-align: top;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.beditor-cell-13:hover {
+	background-image: url(edit.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-bottom: 1px solid red;
+}
+
+
+.cell-context-menu {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    padding: 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: #FFF;
+    color: #333;
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+.cell-context-menu li {
+    list-style-type: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cell-context-menu li:hover {
+    background-color: #DEF;
+}
+
+
+div #select-type-cell-dlg fieldset {
+	margin-top:5px;
+	padding:0;
+	border:0;
+}
+
+div #select-type-cell-dlg h1 {
+	margin: .6em 0;
+	font-size: 1.2em;
+}
+
+
+#cell-type-form ul{
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 5px 90px 30px 0px;
+	list-style: none;
+}
+
+#cell-type-form li{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: dotted 1px #d5caba;
+}
+
+#cell-type-form span{
+	position: absolute;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	padding: 3px 10px 3px 10px;
+	background: #dddddd;	
+	line-height: 25px;
+	color: #FFF;
+	text-align: center;
+}
+ 
+#cell-type-form span:after{
+	content: '\2717'; /* ballot x */
+}
+ 
+#cell-type-form input{
+	position: absolute;
+	right: 0;
+	width: 31px;
+	height: 31px;	
+	margin: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+   cursor: pointer;
+}
+ 
+#cell-type-form input[type="radio"] + span{
+	visibility: hidden;
+	background: #8ce196;
+}
+ 
+#cell-type-form input[type="radio"] + span:after{
+	content: '\2714'; /* tick */
+}
+ 
+ 
+#cell-type-form input[type="radio"]:checked + span{
+	visibility: visible;
+}
+
+/* Youtube plugin */
+.video-container {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-container-static {
+	width: 100%;
+	min-height: 315px;
+	background-color: black;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: contain;
+}
+
+/* Static image plugin */
+.static-image-container {
+    width: inherit;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}

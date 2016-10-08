@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.css"> 
+  <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.theme.css">  
+  
+  <script src="jquery-1.12.3.min.js"></script>
+  <script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+  <script src="ckeditor_4.5.8/ckeditor.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="block-editor/block-editor.css" />
+  <script src="block-editor/block-editor.js"></script>
+</head>
+<body>
+
+<form id="article" action="template.php" method="post">
+	<textarea id="article_content" name="article_content"></textarea>
+	<button type="submit">Save</button>
+</form>
+<script>
+	BEDITOR.replace ( 'article', 'article_content' );
+</script>
+
+</body>
+</html>

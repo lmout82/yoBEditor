@@ -5,5 +5,7 @@ A block editor is a rich content WYSIWYG (What You See Is What You Get) editor r
 This enhanced editor is easy to use, intuitive and does not require any knowledge in any web languages such as HTML. It can be easily extended.
 
 A detailed documentation is available in the "doc" folder.
+Watch my demo video available at: https://youtu.be/cJyXbsgEwK0 
 
+Status: beta
  

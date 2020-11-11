@@ -8,4 +8,9 @@ A detailed documentation is available in the "doc" folder.
 Watch my demo video available at: https://youtu.be/cJyXbsgEwK0 
 
 Status: beta
- 
+
+## Important notice
+
+This repository was initially developed when I was learning to code a long long time ago. Please take into account that this work does not reflect my present skills.
+
+**_This repository is not maintained._**
